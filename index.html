@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <!-- Add your CSS file links here -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- Add favicon link here -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    
+    <!-- Container with Background Image -->
+    <div class="mContainer">
+        <text class="mText flex justify-center text-6xl font-bold font-sans p-6">Jefrey Bethel</text>
+        <div class="mImageContainer">
+        <!-- Rest of your HTML content... -->
+        </div>
+    </div>
+
+    <div class="mMainContainer p-6 rounded-lg flex flex-col items-center">
+        <!-- Resume Button -->
+        <button onclick="location.href='resume.pdf'" type="button" class="mb-10 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">View Resume</button>
+     
+        <!-- Experience Section -->
+        <section id="experience" class="mb-6 flex flex-col items-center">
+            <h2 class="text-3xl mb-4 text-white">Experience</h2>
+            <!-- Each card will represent an individual job or role -->
+            <div class="flex flex-wrap justify-center">
+
+            <div class="m-1 bg-white shadow-lg rounded-lg overflow-hidden w-full lg:w-1/5 p-2">
+                <div class="p-4">
+                    <h3 class="font-semibold text-xl mb-2">Web Development</h3>
+                    <p class="text-gray-600">Developing full-stack web applications leveraging languages like Javascript and frameworks like React, Redux, and Next.js. Implementing responsive UI/UX designs optimized for various devices. Database experience with MongoDB. Version control with Git. Deployment experience with platforms like Firebase.</p>
+                </div>
+            </div>
+            <div class="m-1 bg-white shadow-lg rounded-lg overflow-hidden w-full lg:w-1/5 p-2">
+                <div class="p-4">
+                    <h3 class="font-semibold text-xl mb-2">Software Engineering</h3>
+                    <p class="text-gray-600">Proficient in languages like Java, C/C++, and Python. Skilled in software design principles and data structures & algorithms. Experience with Windows/Linux environments, IDEs like Visual Studio, debuggers like IDA Pro and x64dbg, Docker containers, and ORM models.</p>
+                </div>
+            </div>
+            <div class="m-1 bg-white shadow-lg rounded-lg overflow-hidden w-full lg:w-1/5 p-2">
+                <div class="p-4">
+                    <h3 class="font-semibold text-xl mb-2">UI/UX Design</h3>
+                    <p class="text-gray-600">Designed and implemented graphical user interfaces. Focus on intuitive, interactive, and optimized UI/UX to provide exceptional user experiences. Leverage responsive design principles for consistency across devices.</p>
+                </div>
+            </div>
+            <div class="m-1 bg-white shadow-lg rounded-lg overflow-hidden w-full lg:w-1/5 p-2">
+                <div class="p-4">
+                    <h3 class="font-semibold text-xl mb-2">Database & Backend Development</h3>
+                    <p class="text-gray-600">Developed backends utilizing SQL, ORM models, REST APIs, and frameworks like SpringBoot. Implemented CRUD operations, established database connections, designed efficient queries. Experience with relational (SQL) and non-relational (MongoDB) databases.</p>
+                </div>
+            </div>
+            </div>
+            <!-- Repeat the div for each job -->
+        </section>
+     
+        <!-- Projects Section -->
+        <section id="projects" class="mb-6 flex flex-col items-center">
+            <h2 class="text-3xl mb-4 text-white">Projects</h2>
+            <!-- Each link will represent an individual project -->
+            <p>SafeSurfDNS: <a href="https://github.com/seraph159/safesurfdns" target="_blank" class="text-red-500 underline">View</a> [Rust, Tauri]</p>
+            <p>Three Cards Poker: <a href="https://github.com/seraph159/three-cards-poker" target="_blank" class="text-red-500 underline">View</a> [Java, JavaFX]</p>
+            <p>Denotifier: <a href="https://github.com/seraph159/denotifier" target="_blank" class="text-red-500 underline">View</a> [Javascript, SCSS, Next.js]</p>
+            <p>Keno Lottery Simulator [Java, JavaFX]</p>
+            <p>Hangman Game [C++, Arduino]</p>
+            <p>CTA Train Tracker [Python, SQL]</p>
+            <p>Map Navigation App [C++]</p>
+
+            <!-- Repeat the p for each project -->
+        </section>
+     
+        <!-- Contacts Section -->
+        <section id="contacts" class="mb-6 flex flex-col items-center">
+            <h2 class="text-3xl mb-4 text-white">Contact Me</h2>
+            <!-- Each link will represent an individual project -->
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jbeth2" target="_blank" class="text-red-500 underline">jbeth2</a></p>
+            <p>GitHub: <a href="https://github.com/seraph159" target="_blank" class="text-red-500 underline">seraph159</a></p>
+            <!-- Repeat the p for each project -->
+        </section>
+     </div>
+
+    <!-- Add your JavaScript file links here -->
+    <script src="script.js"></script>
+</body>
+</html>
