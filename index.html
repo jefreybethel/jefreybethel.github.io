@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-
-        <meta charset="UTF-8">
-        <title>Jefrey Bethel</title>
-      
-        <!-- Mobile Meta Tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="main.css">
-      
-        <!-- Favicons -->
-        <link rel="shortcut icon" href="favicon.ico">
-      
-      </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Jefrey Bethel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
 <body>
-    
     <!-- Container with Background Image -->
     <div class="mContainer">
         <text class="mText flex justify-center text-6xl font-bold font-sans p-6">Jefrey Bethel</text>
@@ -26,91 +17,141 @@
             <img src="Clouds3.png" class="cloud animate-pulse">
             <img src="Clouds4.png" class="cloud animate-pulse">
             <img src="Clouds5.png" class="cloud animate-pulse">
-         </div>         
+        </div>
         <div class="mImageContainer">
-        <!-- Rest of your HTML content... -->
+            <!-- Rest of HTML content... -->
         </div>
     </div>
 
-    <div class="mMainContainer p-6 rounded-lg flex flex-col items-center">
+    <!-- mMainContainer -->
+    <div class="mMainContainer">
+
+        <!-- Intro Paragraph -->
+        <p class="introContainer text-lg mb-10 text-center">
+            👋 Hi, I’m Jefrey. I’m a creative, analytical problem solver with a background in software development and computer science. I’m a fast learner and love to work in a team environment. I enjoy the challenge of solving difficult problems, especially when they involve new technologies and/or ideas.
+        </p>
+
         <!-- Resume Button -->
-        <a href="https://drive.google.com/file/d/1-Oko7R6nplJqMsDgFZ9mvDotuy4MSq6f/view?usp=sharing" 
-        target="_blank"
-        class="block mb-10 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">
-        View Resume  
+        <div class="flex justify-center">
+        <a href="https://drive.google.com/file/d/14-_vHc6MdDC0C-l6A6Y6SdKvlOZ97wdk/view?usp=sharing" 
+           target="_blank" 
+           class="resume-button">
+            View Resume
         </a>
-     
+        </div>
+
         <!-- Experience Section -->
-        <section id="experience" class="mb-6 flex flex-col items-center">
-            <h2 class="text-3xl mb-4 text-white">Experience</h2>
-            <!-- Each card will represent an individual job or role -->
-            <div class="flex flex-wrap justify-center">
-
-            <div class="m-1 bg-white shadow-lg rounded-lg overflow-hidden w-full lg:w-1/5 p-2">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl mb-2">Web Development</h3>
-                    <p class="text-gray-600">Developing full-stack web applications leveraging languages like Javascript and frameworks like React, Redux, and Next.js. Implementing responsive UI/UX designs optimized for various devices. Database experience with MongoDB. Version control with Git. Deployment experience with platforms like Firebase.</p>
+        <section id="experience" class="experience-section">
+            <h2 class="experience-title">Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3>Web Development</h3>
+                    <p>I design and build full-stack web applications using Spring, React.js, and Next.js, focusing on responsive, user-friendly interfaces. I manage data with MongoDB, MySQL, PostgreSQL, collaborate using Git, and deploy projects through platforms like Firebase, AWS, Azure, and Netlify.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Software Engineering</h3>
+                    <p>I'm experienced in Java, JavaScript, and Python, with a strong grasp of software design principles, data structures, and algorithms. I'm comfortable working across Windows and Linux environments, using tools like IntelliJ, Visual Studio, IDA Pro, and x64dbg for debugging. I also have hands-on experience with Docker for containerization and ORM models for efficient database management.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>UI/UX Design</h3>
+                    <p>I have created graphical user interfaces that are not just visually appealing but also intuitive and interactive. My goal is always to create exceptional user experiences—whether it’s through seamless navigation, thoughtful layouts, or engaging interactions. I prioritize responsive design to ensure that every interface works flawlessly across devices, from smartphones to desktops, so users get a consistent and enjoyable experience no matter how they access the application.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Database & Backend Development</h3>
+                    <p>I’ve built robust and scalable backends using SQL, ORM models, and frameworks like SpringBoot. My work includes designing and implementing REST APIs, setting up seamless database connections, and optimizing CRUD operations for efficiency. I’ve also crafted well-structured database queries to ensure fast and reliable performance. With hands-on experience in both relational (SQL) and non-relational (MongoDB) databases, I adapt my approach to fit the unique needs of each project, ensuring data is stored and retrieved in the most effective way possible.</p>
                 </div>
             </div>
-            <div class="m-1 bg-white shadow-lg rounded-lg overflow-hidden w-full lg:w-1/5 p-2">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl mb-2">Software Engineering</h3>
-                    <p class="text-gray-600">Proficient in languages like Java, C/C++, and Python. Skilled in software design principles and data structures & algorithms. Experience with Windows/Linux environments, IDEs like Visual Studio, debuggers like IDA Pro and x64dbg, Docker containers, and ORM models.</p>
-                </div>
-            </div>
-            <div class="m-1 bg-white shadow-lg rounded-lg overflow-hidden w-full lg:w-1/5 p-2">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl mb-2">UI/UX Design</h3>
-                    <p class="text-gray-600">Designed and implemented graphical user interfaces. Focus on intuitive, interactive, and optimized UI/UX to provide exceptional user experiences. Leverage responsive design principles for consistency across devices.</p>
-                </div>
-            </div>
-            <div class="m-1 bg-white shadow-lg rounded-lg overflow-hidden w-full lg:w-1/5 p-2">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl mb-2">Database & Backend Development</h3>
-                    <p class="text-gray-600">Developed backends utilizing SQL, ORM models, REST APIs, and frameworks like SpringBoot. Implemented CRUD operations, established database connections, designed efficient queries. Experience with relational (SQL) and non-relational (MongoDB) databases.</p>
-                </div>
-            </div>
-            </div>
-            <!-- Repeat the div for each job -->
         </section>
-     
+
         <!-- Projects Section -->
-        <section id="projects" class="mb-6 flex flex-col items-center">
-            <h2 class="text-3xl mb-4 text-white">Projects</h2>
-            <!-- Each link will represent an individual project -->
-
-            <p>Hotel Genie (Hotel Management App): <a href="https://github.com/seraph159/hotel-genie" target="_blank" class="text-red-500 underline">View</a> [Java, Spring Boot, Spring Security, Spring AI, Open AI, Next.js, React.js, Stripe, Hibernate, Redis, Postgres]</p>
-            <p>SafeSurfDNS: <a href="https://github.com/seraph159/safesurfdns" target="_blank" class="text-red-500 underline">View</a> [Rust, Tauri]</p>
-            <p>Three Cards Poker: <a href="https://github.com/seraph159/three-cards-poker" target="_blank" class="text-red-500 underline">View</a> [Java, JavaFX]</p>
-            <p>Denotifier: <a href="https://github.com/seraph159/denotifier" target="_blank" class="text-red-500 underline">View</a> [Javascript, SCSS, React,js, Next.js]</p>
-            <p>Delib (Library Management App) [Java, Spring Boot, Spring Security, React.js, Hibernate, Postgres]</p>
-            <p>Machine Failure Classification: <a href="https://jefreybethel.github.io/MachineFailureProjectReport.pdf" target="_blank" class="text-red-500 underline">View</a> [Python, pandas, scikit-learn]</p>
-            <p>Natural Language Processing Chatbot [Python, NLTK, scikit-learn, Word2Vec, Stanford CoreNLP]</p>
-            <p>Phind AI Replica (UI/UX Team Research) [Figma, React.js, Firebase]</p>
-            <p>Concurrent Cryptocurrency Blockchain Simulator [Java]</p>
-            <p>Keno Lottery Simulator [Java, JavaFX]</p>
-            <p>Advanced Interative Calculator [Java, JavaFX]</p>
-            <p>Hangman Game [C++, Arduino]</p>
-            <p>CTA Train Tracker [Python, SQL]</p>
-            <p>Map Navigation App [C++]</p>
-            <p>Search Engine [C++]</p>
-            <p>Simple Assembly Compiler [C++/Ruby]</p>
-            <p>Multipurpose Bot [Javascript, discord.js, MongoDB]</p>
-
-            <!-- Repeat the p for each project -->
+        <section id="projects" class="projects-section">
+            <h2 class="projects-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <strong> 🏨 Hotel Genie (Hotel Management App)</strong>
+                    <a href="https://github.com/seraph159/hotel-genie" target="_blank">View</a>
+                    <span>[Java, Spring Boot, Spring Security, Spring AI, Open AI, Next.js, React.js, Stripe, Hibernate, Redis, Postgres]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 🔔 Denotifier</strong>
+                    <a href="https://github.com/seraph159/denotifier" target="_blank">View</a>
+                    <span>[Javascript, SCSS, React.js, Next.js]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 📚 Delib (Library Management App)</strong>
+                    <a href="https://github.com/seraph159/delib-app" target="_blank">View</a>
+                    <span>[Java, Spring Boot, Spring Security, React.js, Hibernate, Postgres]</span>
+                </div>
+                <div class="project-card">
+                    <strong> ⚙️ Machine Failure Classification</strong>
+                    <a href="https://jefreybethel.github.io/MachineFailureProjectReport.pdf" target="_blank">View</a>
+                    <span>[Python, pandas, scikit-learn]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 🃏 Three Cards Poker</strong>
+                    <a href="https://github.com/seraph159/three-cards-poker" target="_blank">View</a>
+                    <span>[Java, JavaFX]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 🌐 SafeSurfDNS</strong>
+                    <a href="https://github.com/seraph159/safesurfdns" target="_blank">View</a>
+                    <span>[Rust, Tauri]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 🤖 Natural Language Processing Chatbot</strong>
+                    <span>[Python, NLTK, scikit-learn, Word2Vec, Stanford CoreNLP]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 🔍 Phind AI Replica (UI/UX Team Research)</strong>
+                    <span>[Figma, React.js, Firebase]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 💸 Concurrent Cryptocurrency Blockchain Simulator</strong>
+                    <span>[Java]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 🎰 Keno Lottery Simulator</strong>
+                    <span>[Java, JavaFX]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 🧮 Advanced Interactive Calculator</strong>
+                    <span>[Java, JavaFX]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 🎮 Hangman Game</strong>
+                    <span>[C++, Arduino]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 🚇 CTA Train Tracker</strong>
+                    <span>[Python, SQL]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 🗺️ Map Navigation App</strong>
+                    <span>[C++]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 🔎 Search Engine</strong>
+                    <span>[C++]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 💻 Simple Assembly Compiler</strong>
+                    <span>[C++/Ruby]</span>
+                </div>
+                <div class="project-card">
+                    <strong> 🤖 Multipurpose Bot</strong>
+                    <span>[Javascript, discord.js, MongoDB]</span>
+                </div>
+            </div>
         </section>
-     
+
         <!-- Contacts Section -->
-        <section id="contacts" class="mb-6 flex flex-col items-center">
-            <h2 class="text-3xl mb-4 text-white">Contact Me</h2>
-            <!-- Each link will represent an individual project -->
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/jbeth2" target="_blank" class="text-red-500 underline">jbeth2</a></p>
-            <p>GitHub: <a href="https://github.com/seraph159" target="_blank" class="text-red-500 underline">seraph159</a></p>
-            <!-- Repeat the p for each project -->
+        <section id="contacts" class="contacts-section">
+            <h2 class="contacts-title">Contact Me</h2>
+            <div class="contacts-info">
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/jbeth2" target="_blank">jbeth2</a></p>
+                <p>GitHub: <a href="https://github.com/seraph159" target="_blank">seraph159</a></p>
+            </div>
         </section>
-     </div>
-
-    <!-- Add your JavaScript file links here -->
-    <script src="script.js"></script>
+    </div>
 </body>
 </html>

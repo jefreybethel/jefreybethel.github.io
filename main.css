@@ -698,6 +698,8 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+/* Custom Styles -------------------------------------*/
+
 #logo {
   /* Add your logo styles here */
 }
@@ -708,9 +710,7 @@ body {
 }
 
 .mContainer {
-  background: linear-gradient(to top, 
-      transparent, 
-      #4583C5 75%);
+  background: linear-gradient(to top, transparent, #4583C5 75%);
 }
 
 .mImageContainer {
@@ -719,14 +719,194 @@ body {
   background-size: cover;
 }
 
-.mText{
+.mText {
   color: #F9EAC3;
 }
 
-.mMainContainer{
-  background-color: #757F8C;
-  margin: -250px 25px 50px 25px;
+.mMainContainer {
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(30, 30, 60, 0.9), rgba(10, 20, 40, 0.8));
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  max-width: 1200px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* Intro ----------------------------------------*/
+
+.introContainer {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 15px;
+  padding: 1.5rem;
+  color: #d1d5db;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth transitions */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+}
+
+/* Resume --------------------------------------*/
+
+.resume-button {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.5);
+}
+
+/* Experience Section -----------------------------*/
+
+.experience-section {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.experience-title {
+  font-size: 2.25rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+.experience-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+}
+
+.experience-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e5e7eb;
+  margin-bottom: 0.75rem;
+}
+
+.experience-card p {
+  color: #d1d5db;
+  font-size: 0.95rem;
+}
+
+/* Projects Section --------------------------------*/
+
+.projects-section {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 2.25rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* For individual project cards */
+.project-card {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 15px;
+  padding: 1.5rem;
+  color: #d1d5db;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth transitions */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+  transform: translateY(-10px); /* Lift effect */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Style for project titles */
+.project-card strong {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #e5e7eb;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Style for links within project cards */
+.project-card a {
+  color: #f87171;
+  text-decoration: underline;
+  margin: 0 0.5rem; /* Space around the link */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect for links */
+.project-card a:hover {
+  color: #fb923c;
+}
+
+/* Style for tech stack */
+.project-card span {
+  font-size: 0.9rem;
+  color: #b3c0d5;
+}
+
+.contacts-section {
+  text-align: center;
+}
+
+/* Contacts Section --------------------------------*/
+
+.contacts-title {
+  font-size: 2.25rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+.contacts-info {
+  color: #d1d5db;
+}
+
+.contacts-info a {
+  color: #f87171;
+  text-decoration: underline;
+}
+
+
+/* Clouds --------------------------------*/
 
 .clouds {
   position: relative;
@@ -743,7 +923,6 @@ body {
   0% {
     transform: translateX(-300px);
   }
-
   100% {
     transform: translateX(calc(100vw));
   }
